@@ -1,20 +1,20 @@
 {
-    "flower": "tag:forge:storage_blocks/iron",
+    "flower": "tag:forge:storage_blocks/netherite",
     "maxTimeInHive": 2400,
     "traits": ["nether"],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ores/iron/iron_bee",
+    "baseLayerTexture": "ores/netherite/netherite_bee",
     "ColorData": {
-        "primaryColor": "#ffcc99",
-        "secondaryColor": "#ffcc99",
-        "honeycombColor": "#ffcc99",
+        "primaryColor": "#654740",
+        "secondaryColor": "#654740",
+        "honeycombColor": "#654740",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#ffcc99",
+        "glowColor": "#654740",
         "isEnchanted": false,
         "glowingPulse": 0,
         "modelType": "DEFAULT"
@@ -30,16 +30,13 @@
         "mutationCount": 1,
         "mutations": [{
             "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:iron_honeycomb_block",
+            "inputID": "resourcefulbees:dense_netherite_honeycomb_block",
             "outputs": [{
-                    "outputID": "minecraft:iron_ingot",
+                    "outputID": "minecraft:netherite_scrap",
                     "weight": 80
                 },
                 {
-                    "outputID": "resourcefulbees:bee_jar",
-                    "nbtData": {
-                        "Entity": "resourcefulbees:iron_bee"
-                    },
+                    "outputID": "resourcefulbees:dense_netherite_bee_spawn_egg",
                     "weight": 20
                 }
             ]
@@ -48,13 +45,13 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "minecraft:iron_ore",
+        "mainOutput": "minecraft:netherite_scrap",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
+        "mainOutputCount": 2,
         "mainNBTData": {},
-        "secondaryOutput": "minecraft:iron_ingot",
+        "secondaryOutput": "minecraft:netherite_scrap",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutputCount": 4,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -75,17 +72,17 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
-        "parent1": "Quartz",
-        "parent2": "Stoned",
+        "isBreedable": false,
+        "parent1": "",
+        "parent2": "",
         "breedWeight": 10,
         "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/iron",
+        "feedItem": "tag:forge:storage_blocks/netherite",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },
     "TraitData": {
-        "hasTraits": false
+        "hasTraits": true
     }
 }

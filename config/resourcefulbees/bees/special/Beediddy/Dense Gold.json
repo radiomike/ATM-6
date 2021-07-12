@@ -1,23 +1,23 @@
 {
-    "flower": "tag:forge:storage_blocks/iron",
+    "flower": "tag:forge:storage_blocks/gold",
     "maxTimeInHive": 2400,
     "traits": ["nether"],
     "hasHoneycomb": true,
-    "baseLayerTexture": "ores/iron/iron_bee",
+    "baseLayerTexture": "ores/gold/gold_bee",
     "ColorData": {
-        "primaryColor": "#ffcc99",
-        "secondaryColor": "#ffcc99",
-        "honeycombColor": "#ffcc99",
+        "primaryColor": "#FFDC00",
+        "secondaryColor": "#FFDC00",
+        "honeycombColor": "#FFDC00",
         "primaryLayerTexture": "empty_layer",
         "secondaryLayerTexture": "empty_layer",
         "emissiveLayerTexture": "empty_layer",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "glowColor": "#ffcc99",
+        "glowColor": "#FFDC00",
         "isEnchanted": false,
         "glowingPulse": 0,
-        "modelType": "DEFAULT"
+        "modelType": "ORE"
     },
     "CombatData": {
         "isPassive": true,
@@ -29,32 +29,30 @@
         "hasMutation": true,
         "mutationCount": 1,
         "mutations": [{
-            "type": "BLOCK_TO_ITEM",
-            "inputID": "resourcefulbees:iron_honeycomb_block",
-            "outputs": [{
-                    "outputID": "minecraft:iron_ingot",
-                    "weight": 80
-                },
-                {
-                    "outputID": "resourcefulbees:bee_jar",
-                    "nbtData": {
-                        "Entity": "resourcefulbees:iron_bee"
+                "type": "BLOCK_TO_ITEM",
+                "inputID": "resourcefulbees:dense_gold_honeycomb_block",
+                "outputs": [{
+                        "outputID": "minecraft:gold_ingot",
+                        "weight": 80
                     },
-                    "weight": 20
-                }
-            ]
-        }]
+                    {
+                        "outputID": "resourcefulbees:dense_gold_bee_spawn_egg",
+                        "weight": 20
+                    }
+                ]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
         "mainInputCount": 1,
-        "mainOutput": "minecraft:iron_ore",
+        "mainOutput": "minecraft:gold_ore",
         "mainOutputWeight": 0.50,
-        "mainOutputCount": 1,
+        "mainOutputCount": 2,
         "mainNBTData": {},
-        "secondaryOutput": "minecraft:iron_ingot",
+        "secondaryOutput": "minecraft:gold_ingot",
         "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 2,
+        "secondaryOutputCount": 4,
         "secondaryNBTData": {},
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -75,12 +73,12 @@
         "lightLevel": "ANY"
     },
     "BreedData": {
-        "isBreedable": true,
+        "isBreedable": false,
         "parent1": "Quartz",
         "parent2": "Stoned",
         "breedWeight": 10,
         "breedChance": 0.60,
-        "feedItem": "tag:forge:storage_blocks/iron",
+        "feedItem": "tag:forge:storage_blocks/gold",
         "feedAmount": 5,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
