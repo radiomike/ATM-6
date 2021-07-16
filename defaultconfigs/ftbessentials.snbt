@@ -4,23 +4,23 @@
 			# /back cooldown in seconds
 			# Default: 30
 			# Range: 0 ~ 604800
-			cooldown: 30
+			cooldown: 604800
 			
 			# Max number of times you can use /back
 			# Default: 10
 			# Range: 0 ~ +∞
-			max: 10
+			max: 0
 		}
 		home: {
 			# /home cooldown in seconds
 			# Default: 10
 			# Range: 0 ~ 604800
-			cooldown: 10
+			cooldown: 604800
 			
 			# Max homes
 			# Default: 1
 			# Range: 0 ~ +∞
-			max: 1
+			max: 0
 		}
 		rtp: {
 			# /rtp cooldown in seconds
@@ -36,7 +36,7 @@
 			# Number of tries before /rtp gives up
 			# Default: 100
 			# Range: 1 ~ 1000
-			max_tries: 100
+			max_tries: 10
 			
 			# /rtp min distance from spawn point
 			# Default: 1000
@@ -47,19 +47,19 @@
 			# /spawn cooldown in seconds
 			# Default: 10
 			# Range: 0 ~ 604800
-			cooldown: 10
+			cooldown: 604800
 		}
 		tpa: {
 			# /tpa cooldown in seconds
 			# Default: 10
 			# Range: 0 ~ 604800
-			cooldown: 10
+			cooldown: 604800
 		}
 		warp: {
 			# /warp cooldown in seconds
 			# Default: 10
 			# Range: 0 ~ 604800
-			cooldown: 10
+			cooldown: 604800
 		}
 	}
 }
